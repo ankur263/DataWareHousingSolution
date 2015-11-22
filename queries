@@ -1,0 +1,4 @@
+select coubt(*) from tweets
+SELECT link, COUNT(*) AS ct FROM tweets GROUP BY link ORDER BY ct DESC LIMIT 20
+SELECT screenName FROM tweets
+select screenName from tweets where followers > 20
