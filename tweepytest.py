@@ -1,10 +1,10 @@
 import time
 import tweepy
 
-consumer_key = 'bwKLCBo7eAeVa7RLrokJsW6sG'
-consumer_secret = 'obxE6F6ZRaXCczJLSzdThISlV3VrRaeaWxQMPejkadfvndgquy'
-access_token = '137553558-JDDDVNNXm6MgfUVfPh5W273azu4jc6d7R2WJBOAa'
-access_token_secret = 'suRTonFPhaQomKy5hclprSnxSBTA36kEpPuEFRNm5Hhx6'
+consumer_key = //put your key here
+consumer_secret = //
+access_token = //
+access_token_secret = //
  
 # OAuth process, using the keys and tokens
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -12,7 +12,7 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-user = api.get_user('vinayak205')
+user = api.get_user('friend_twitter_handle')
 for friend in user.friends():
     print friend.screen_name
     time.sleep(60)
